@@ -1,6 +1,6 @@
 # Prueba Tecnica Layout MinData
 
-Para clonar y ejecutar el proyecto sigue estos pasos:
+Para clonar y ejecutar el proyecto seguir los siguientes pasos:
 
 1. Clonar el repositorio:
    `git clone https://github.com/LucaasN/challenge-layout-mindata.git`
