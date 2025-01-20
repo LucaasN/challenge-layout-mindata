@@ -1,7 +1,5 @@
 # Prueba Tecnica Layout MinData
 
-## Clonar y ejecutar el proyecto
-
 Para clonar y ejecutar el proyecto sigue estos pasos:
 
 1. Clonar el repositorio:
