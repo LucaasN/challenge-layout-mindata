@@ -1,0 +1,23 @@
+@import "@styles/_variables.scss";
+@import "@styles/_mixins.scss";
+
+.avatar {
+  & img {
+    object-fit: cover;
+    border-radius: 100%;
+    padding: 0.2rem;
+    background-color: $standard-100;
+  }
+
+  &__small img {
+    height: 3rem;
+    width: 3rem;
+    border: 2.5px solid $standard-900;
+  }
+
+  &__large img {
+    height: 4.5rem;
+    width: 4.5rem;
+    border: 4px solid #FD1E45;
+  }
+}

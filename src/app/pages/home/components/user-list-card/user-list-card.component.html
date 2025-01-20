@@ -1,0 +1,18 @@
+<div class="card">
+  <div class="card__content">
+    <h2 class="card__title">Minim dolorin</h2>
+    <p class="card__description">
+      Minim dolor in ament nulla laboris enim dolore consequat.
+    </p>
+    <app-user-summary
+      class="card__user-summary"
+      [user]="user"
+      *ngFor="let user of users"
+    ></app-user-summary>
+  </div>
+
+  <div class="card__footer">
+    <h5 class="card__students">543 students</h5>
+    <a class="card__link" href="#">View all member</a>
+  </div>
+</div>

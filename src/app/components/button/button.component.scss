@@ -1,0 +1,39 @@
+@import "@styles/_variables.scss";
+@import "@styles/_mixins.scss";
+
+//Mixin boton base
+@mixin button($padding, $bg-color, $border-color, $text-color, $font-size, $font-weight, $border-radius, $width: auto) {
+  padding: $padding;
+  border: 3px solid $border-color;
+  background-color: $bg-color;
+  text-transform: uppercase;
+  color: $text-color;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  border-radius: $border-radius;
+  cursor: pointer;
+  width: $width;
+
+  &:hover {
+    filter: brightness(90%);
+  }
+}
+
+.button {
+  @include button(0.6rem 1rem, $standard-100, $standard-1000, $standard-1000, 0.8rem, 900, 0.2rem);
+}
+
+.button_purple {
+  @include button(0.6rem 1rem, $purple-color, $purple-color, $standard-100, 0.7rem, 500, 0.2rem);
+}
+
+.button_black {
+  @include button(0.6rem 1rem, $standard-1000, $standard-1000, $standard-100, 0.8rem, 900, 0.2rem);
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.button_pink {
+  @include button(0.8rem 1rem, $pink-color, $pink-color, $standard-100, 0.8rem, 900, 10rem, 100%);
+}

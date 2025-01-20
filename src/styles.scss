@@ -1,0 +1,77 @@
+@import "@styles/_variables.scss";
+@import "@styles/_mixins.scss";
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+// Estilos globales
+body {
+  background-color: $standard-600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: $font-family;
+}
+
+// Mixin para encabezados
+@mixin heading-styles($size, $weight, $color: null) {
+  font-size: $size;
+  font-weight: $weight;
+  @if $color {
+    color: $color;
+  }
+}
+
+// Encabezados
+h1 {
+  @include heading-styles(2rem, 900);
+}
+
+h2 {
+  @include heading-styles(1.8rem, 600, $standard-1000);
+}
+
+h3 {
+  @include heading-styles(1.5rem, 600);
+}
+
+h4 {
+  @include heading-styles(1.3rem, 600);
+}
+
+h5 {
+  @include heading-styles(0.9rem, 500);
+}
+
+// Estilos para parrafos
+p {
+  font-size: 1.1rem;
+  color: $standard-900;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+// Estilos para enlaces
+a {
+  color: $standard-900;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

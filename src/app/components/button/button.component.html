@@ -1,0 +1,11 @@
+<button
+  class="button"
+  [ngClass]="{
+    button_purple: type === 'variant1',
+    button: type === 'variant2',
+    button_black: type === 'variant3',
+    button_pink: type === 'variant4'
+  }"
+>
+  {{ label }}
+</button>

@@ -1,0 +1,48 @@
+@import "@styles/_variables.scss";
+@import "@styles/_mixins.scss";
+
+.card {
+  @include card;
+  max-width: 22rem;
+
+  &__background {
+    background: linear-gradient(to right, #ff512f, #ef971a);
+    width: 100%;
+    height: 12rem;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+    min-width: 22rem;
+  }
+
+  &__avatar {
+    padding: 0.3rem;
+    background-color: $standard-100;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -2.9rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__content {
+    @include flex-center;
+    flex-direction: column;
+    padding: 1.25rem;
+  }
+
+  &__user-name {
+    margin-top: 2rem;
+  }
+
+  &__user-job {
+    margin-top: 0.4rem;
+    color: $standard-500;
+  }
+
+  &__button-group {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+  }
+}

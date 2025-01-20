@@ -1,0 +1,29 @@
+@import "@styles/_variables.scss";
+@import "@styles/_mixins.scss";
+
+.card {
+  @include card;
+  max-width: 22rem;
+
+  &__content {
+    padding: 1.25rem;
+  }
+
+  &__description {
+    color: $standard-500;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  &__footer {
+    @include flex-space-between;
+    background-color: $standard-200;
+    padding: 1.25rem;
+    border-radius: 0rem 0rem 1.3rem 1.3rem;
+  }
+
+  &__students {
+    color: $standard-500;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,25 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-space-between {
+  @include flex-center;
+  justify-content: space-between;
+}
+
+@mixin card {
+  background-color: $standard-100;
+  border-radius: 20px;
+}
+
+@mixin badge($bg-color, $icon-color: $standard-100) {
+  @include flex-center;
+  height: 2rem;
+  width: 2rem;
+  font-size: 1rem;
+  background-color: $bg-color;
+  border-radius: 50%;
+  color: $icon-color;
+}

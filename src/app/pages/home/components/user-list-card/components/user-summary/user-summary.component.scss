@@ -1,0 +1,16 @@
+@import "../../../../../../../styles/variables";
+@import "../../../../../../../styles/mixins";
+
+.user-summary {
+  @include flex-space-between;
+  margin: 0.7rem 0rem;
+
+  &__container {
+    @include flex-center;
+    gap: 1rem;
+  }
+
+  &__job {
+    color: $standard-500;
+  }
+}
